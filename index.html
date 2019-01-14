@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Табло рейсов аэропорта</h1>
+    <hr>
+
+    <div class="buttons">
+        <span onclick="main(1,null,3)">Прилёт</span>
+        <span onclick="main(2,null,3)">Вылет</span>
+        <span onclick="main(null,null,1)">Задержанные</span>
+    </div>
+
+    <div class="search">
+        <input type="text" onkeyup="main(null,this.value,null)" id="searchLine" placeholder="Поиск по номеру рейса"> 
+        <!-- <span id="searchButton">Искать</span> -->
+    </div> 
+    
+    <table id="results">
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+    
+    <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
